@@ -1,0 +1,94 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+  width: auto;
+  padding-top: 56px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+.navbar a.navbar-brand,
+.navbar .nav-item a.nav-link {
+  transition: all .1s ease-in;
+}
+
+header .navbar a.navbar-brand {
+  color: rgba(255,255,255,.75);
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+header .navbar a.navbar-brand:hover {
+  color:#FFFFFF;
+}
+
+header .navbar .nav-item a.nav-link:hover {
+  color: rgba(255,255,255,1);
+}
+
+header .navbar .nav-item {
+  padding: 0 1rem;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+header .navbar .nav-item a.nav-link {
+  display: block;
+  position: relative;
+  padding: 0.1rem 0;
+}
+
+header .navbar .nav-item a.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1rem;
+  background-color: #FFFFFF;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+header .navbar .nav-item a.nav-link:hover::after,
+header .navbar .nav-item a.nav-link:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.1rem, 0);
+}
+
+section {
+  padding: 3rem 0;
+}
+
+.main {
+  flex: 1;
+}
+
+/* HOME PAGE */
+form {
+  margin: 2rem 0;
+}
+
+form label {
+  margin-bottom: .25rem;
+}
+
+form input {
+  margin-bottom: 1rem;
+}
+
+.response .btn {
+  margin-top: 2rem;
+}
+
+/* RESPONSE PAGE */
+.home .btn {
+  margin-top: 1rem;
+}
